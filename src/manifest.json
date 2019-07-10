@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "極悪テストくん",
+  "version": "0.0.0.1",
+  "description": "",
+  "icons": {},
+  "background": {
+    "scripts": [
+      "background.bundle.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/secure/RapidBoard.jspa*",
+        "https://*/secure/RapidBoard.jspa*"
+      ],
+      "js": [
+        "content.bundle.js"
+      ]
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {
+    "default_title": "My Bookmarks",
+    "default_popup": "popup.html"
+  }
+}
