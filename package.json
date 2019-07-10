@@ -1,0 +1,32 @@
+{
+  "name": "gokuaku-testkun",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "NODE_ENV=production; webpack",
+    "build:dev": "webpack",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint-fix": "yarn lint --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chrome": "^0.0.86",
+    "@types/jest": "^24.0.12",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "file-loader": "^4.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.16.4",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "write-file-webpack-plugin": "^4.5.0"
+  }
+}
